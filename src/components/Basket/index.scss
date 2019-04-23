@@ -1,0 +1,91 @@
+section:last-child {
+    width: 100%;
+    margin-right: 25px;
+    margin-top: 30px;
+
+    #basket {
+        width: 100%;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 0 20px rgb(209, 209, 209);
+        box-shadow: 0 0 20px rgb(209, 209, 209);
+
+        @media (min-width: 768px) {
+            margin-right: 20px;
+        }
+
+        .basket__header {
+            text-transform: uppercase;
+            font-size: 1.5em;
+            padding: 10px 0px 10px 10px;
+            color: #8CBF00;
+            border-bottom: 2px solid  #8CBF00;
+            margin: 0px;
+        }
+
+        .basket__products {
+            display: none;
+
+            hr {
+                border: 1px solid rgb(236, 236, 236);
+                margin: 0px 10px;
+            }
+
+            div {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: space-between;
+
+                img {
+                    max-width: 100px;
+                    height: auto;
+                    border: 1px solid rgb(209, 209, 209);
+                    padding: 5px 5px;
+                    margin: 0px 10px;
+                }
+
+                p:nth-child(2) {
+                    width: 100%;
+                    justify-self: flex-start;
+                }
+
+                p:last-child {
+                    font-weight: 700;
+                    margin: 0px 10px;
+                }
+            }
+
+            @media (min-width: 768px) {
+                display: block;
+            }
+        }
+
+        .basket__total {
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+
+            p:first-child {
+                font-size: 1.5em;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin: 0px 10px;
+            }
+
+            p:nth-child(2) {
+                width: 100%;
+                justify-self: flex-start;
+            }
+
+            p:last-child {
+                font-weight: 700;
+                font-size: 1.5em;
+                margin-right: 10px;
+            }
+        }
+    }
+}    
+    
